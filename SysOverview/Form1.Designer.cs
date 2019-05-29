@@ -28,48 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Processor = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Video = new System.Windows.Forms.Label();
+            this.Baseboard = new System.Windows.Forms.Label();
+            this.Ram = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Processor
             // 
-            this.Processor.AutoSize = true;
-            this.Processor.Location = new System.Drawing.Point(118, 52);
+            resources.ApplyResources(this.Processor, "Processor");
             this.Processor.Name = "Processor";
-            this.Processor.Size = new System.Drawing.Size(63, 13);
-            this.Processor.TabIndex = 0;
-            this.Processor.Text = "Процессор";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(390, 13);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 52);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // Video
+            // 
+            resources.ApplyResources(this.Video, "Video");
+            this.Video.Name = "Video";
+            // 
+            // Baseboard
+            // 
+            resources.ApplyResources(this.Baseboard, "Baseboard");
+            this.Baseboard.Name = "Baseboard";
+            // 
+            // Ram
+            // 
+            resources.ApplyResources(this.Ram, "Ram");
+            this.Ram.Name = "Ram";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Ram);
+            this.Controls.Add(this.Baseboard);
+            this.Controls.Add(this.Video);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Processor);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,6 +110,12 @@
         private System.Windows.Forms.Label Processor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Video;
+        private System.Windows.Forms.Label Baseboard;
+        private System.Windows.Forms.Label Ram;
     }
 }
 

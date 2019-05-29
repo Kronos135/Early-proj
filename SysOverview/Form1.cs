@@ -16,6 +16,15 @@ namespace SysOverview
         {
             InitializeComponent();
             Processor.Text = logic.GetComponent("Win32_Processor", "Name");
+            Video.Text = logic.GetComponent("Win32_VideoController", "Name");
+            Baseboard.Text = logic.GetComponent("Win32_BaseBoard", "Manufacturer") + " " + logic.GetComponent("Win32_BaseBoard", "Product");
+            Ram.Text = logic.GetPhysicalMemory();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
+
 }
