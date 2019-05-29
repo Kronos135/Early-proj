@@ -21,5 +21,24 @@ namespace SysOverview
             }
             return "";
         }
+        public static string GetPhysicalMemory()
+        {
+            ManagementScope oMs = new ManagementScope();
+            ObjectQuery oQuery = new ObjectQuery("SELECT Capacity FROM Win32_PhysicalMemory");
+            ManagementObjectSearcher oSearcher = new ManagementObjectSearcher(oMs, oQuery);
+            ManagementObjectCollection oCollection = oSearcher.Get();
+
+            long MemSize = 0;
+            long mCap = 0;
+
+            // In case more than one Memory sticks are installed
+            foreach (ManagementObject obj in oCollection)
+            {
+                mCap = Convert.ToInt64(obj["Capacity"]);
+                MemSize += mCap;
+            }
+            MemSize = (MemSize / 1024) / 1024;
+            return MemSize.ToString() + "MB";
+        }
     }
 }
