@@ -77,7 +77,7 @@ namespace SysOverview
             /*
                         //Устанавливаем текст на кнопке, которая была изображена на скриншоте раньше название локализации
                         TSDD_Language.Text = newCultureInfo.NativeName;
-
+                        xcbb
                         //Устанавливаем флаг на активной локализации (см. функцию ниже)
                         SetCurrenLanguageButtonChecked();
                         */
