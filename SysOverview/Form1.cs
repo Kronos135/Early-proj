@@ -16,24 +16,35 @@ namespace SysOverview
         public Form1()
         {
             InitializeComponent();
-            iProcessor.Text = logic.GetComponent("Win32_Processor", "Name");
-            iVideo.Text = logic.GetComponent("Win32_VideoController", "Name");
-            iBaseboard.Text = logic.GetComponent("Win32_BaseBoard", "Manufacturer") + " " + logic.GetComponent("Win32_BaseBoard", "Product");
-            iRam.Text = logic.GetPhysicalMemory();
+            iProcessor.Text = Logic.GetComponent("Win32_Processor", "Name");
+            iVideo.Text = Logic.GetComponent("Win32_VideoController", "Name");
+            iBaseboard.Text = Logic.GetComponent("Win32_BaseBoard", "Manufacturer") + " " + Logic.GetComponent("Win32_BaseBoard", "Product");
+            iRam.Text = Logic.GetPhysicalMemory();
         }
 
 
 
-        private void СохранитьФайлToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveToItem_Click(object sender, EventArgs e)
         {
+            //FolderBrowserDialog1_HelpRequest(sender, e);
+            StringBuilder BLa = new StringBuilder();
 
+            foreach (var item in this.Controls)
+            {
+                if (item is System.Windows.Forms.Label)
+                {
+                    BLa.AppendLine((item as Label).Text);
+                    
+                }
+            }
+            Logic.Writer(BLa);
         }
 
-        private void EnglishToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EngItem_Click(object sender, EventArgs e)
         {
             ChangeLanguage("en");
         }
-        private void РусскийToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void RusItem1_Click(object sender, EventArgs e)
         {
             ChangeLanguage("");
         }
@@ -49,6 +60,12 @@ namespace SysOverview
         {
             var F2 = new Form2();
             F2.ShowDialog();
+          
+        }
+
+        private void FolderBrowserDialog1_HelpRequest(object sender, EventArgs e)
+        {
+
         }
 
         private void ChangeLanguage(string newLanguageString)
@@ -83,7 +100,7 @@ namespace SysOverview
                         */
         }
 
- 
+
     }
 
 }
