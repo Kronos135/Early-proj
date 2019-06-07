@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Management;
+using System.IO;
 
 namespace SysOverview
 {
-    class logic
+    class Logic
     {
         public static string GetComponent(string hwclass, string syntax)
         {
@@ -40,5 +41,18 @@ namespace SysOverview
             MemSize = (MemSize / 1024) / 1024;
             return MemSize.ToString() + "MB";
         }
+
+        public static void Writer(StringBuilder str)
+        {
+   
+           string path =  @"C:\SysInfo\SysInfo.txt";
+
+           StreamWriter sw = new StreamWriter(path, false);
+           sw.Write(str);
+           sw.Close();
+
+            
+        }
     }
+
 }
