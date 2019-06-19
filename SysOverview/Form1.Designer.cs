@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.iRam = new System.Windows.Forms.Label();
-            this.Ram = new System.Windows.Forms.Label();
-            this.iBaseboard = new System.Windows.Forms.Label();
-            this.Baseboard = new System.Windows.Forms.Label();
-            this.iVideo = new System.Windows.Forms.Label();
-            this.Video = new System.Windows.Forms.Label();
-            this.iProcessor = new System.Windows.Forms.Label();
-            this.Processor = new System.Windows.Forms.Label();
             this.MainLabel = new System.Windows.Forms.Label();
+            this.Ram = new System.Windows.Forms.Label();
+            this.iRam = new System.Windows.Forms.Label();
+            this.Baseboard = new System.Windows.Forms.Label();
+            this.iBaseboard = new System.Windows.Forms.Label();
+            this.Video = new System.Windows.Forms.Label();
+            this.iVideo = new System.Windows.Forms.Label();
+            this.Processor = new System.Windows.Forms.Label();
+            this.iProcessor = new System.Windows.Forms.Label();
             this.MainStrip = new System.Windows.Forms.MenuStrip();
             this.MainMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveIn = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,50 +50,50 @@
             this.MainStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // iRam
+            // MainLabel
             // 
-            resources.ApplyResources(this.iRam, "iRam");
-            this.iRam.Name = "iRam";
+            resources.ApplyResources(this.MainLabel, "MainLabel");
+            this.MainLabel.Name = "MainLabel";
             // 
             // Ram
             // 
             resources.ApplyResources(this.Ram, "Ram");
             this.Ram.Name = "Ram";
             // 
-            // iBaseboard
+            // iRam
             // 
-            resources.ApplyResources(this.iBaseboard, "iBaseboard");
-            this.iBaseboard.Name = "iBaseboard";
+            resources.ApplyResources(this.iRam, "iRam");
+            this.iRam.Name = "iRam";
             // 
             // Baseboard
             // 
             resources.ApplyResources(this.Baseboard, "Baseboard");
             this.Baseboard.Name = "Baseboard";
             // 
-            // iVideo
+            // iBaseboard
             // 
-            resources.ApplyResources(this.iVideo, "iVideo");
-            this.iVideo.Name = "iVideo";
+            resources.ApplyResources(this.iBaseboard, "iBaseboard");
+            this.iBaseboard.Name = "iBaseboard";
             // 
             // Video
             // 
             resources.ApplyResources(this.Video, "Video");
             this.Video.Name = "Video";
             // 
-            // iProcessor
+            // iVideo
             // 
-            resources.ApplyResources(this.iProcessor, "iProcessor");
-            this.iProcessor.Name = "iProcessor";
+            resources.ApplyResources(this.iVideo, "iVideo");
+            this.iVideo.Name = "iVideo";
             // 
             // Processor
             // 
             resources.ApplyResources(this.Processor, "Processor");
             this.Processor.Name = "Processor";
             // 
-            // MainLabel
+            // iProcessor
             // 
-            resources.ApplyResources(this.MainLabel, "MainLabel");
-            this.MainLabel.Name = "MainLabel";
+            resources.ApplyResources(this.iProcessor, "iProcessor");
+            this.iProcessor.Name = "iProcessor";
             // 
             // MainStrip
             // 
@@ -160,15 +160,15 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.MainStrip);
-            this.Controls.Add(this.iRam);
-            this.Controls.Add(this.Ram);
-            this.Controls.Add(this.iBaseboard);
-            this.Controls.Add(this.Baseboard);
-            this.Controls.Add(this.iVideo);
-            this.Controls.Add(this.Video);
-            this.Controls.Add(this.iProcessor);
-            this.Controls.Add(this.Processor);
             this.Controls.Add(this.MainLabel);
+            this.Controls.Add(this.Ram);
+            this.Controls.Add(this.iRam);
+            this.Controls.Add(this.Baseboard);
+            this.Controls.Add(this.iBaseboard);
+            this.Controls.Add(this.Video);
+            this.Controls.Add(this.iVideo);
+            this.Controls.Add(this.Processor);
+            this.Controls.Add(this.iProcessor);
             this.MainMenuStrip = this.MainStrip;
             this.Name = "Form1";
             this.MainStrip.ResumeLayout(false);
@@ -179,16 +179,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label iRam;
-        private System.Windows.Forms.Label Ram;        
-        private System.Windows.Forms.Label iBaseboard;        
-        private System.Windows.Forms.Label Baseboard;
-        private System.Windows.Forms.Label iVideo;
-        private System.Windows.Forms.Label Video;
-        private System.Windows.Forms.Label iProcessor;
-        private System.Windows.Forms.Label Processor;
         private System.Windows.Forms.Label MainLabel;
+        
+        private System.Windows.Forms.Label Ram;
+        private System.Windows.Forms.Label iRam;
+        private System.Windows.Forms.Label Baseboard;
+        private System.Windows.Forms.Label iBaseboard;
+        private System.Windows.Forms.Label Video;
+        private System.Windows.Forms.Label iVideo;
+        private System.Windows.Forms.Label Processor;
+        private System.Windows.Forms.Label iProcessor;
         private System.Windows.Forms.MenuStrip MainStrip;              
         private System.Windows.Forms.ToolStripMenuItem MainMenu;
         private System.Windows.Forms.ToolStripMenuItem SaveIn;
