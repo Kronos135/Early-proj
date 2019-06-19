@@ -121,6 +121,9 @@
   <data name="Exit.Size" type="System.Drawing.Size, System.Drawing">
     <value>173, 22</value>
   </data>
+  <data name="&gt;&gt;iProcessor.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="iRam.Location" type="System.Drawing.Point, System.Drawing">
     <value>133, 225</value>
   </data>
@@ -133,9 +136,6 @@
   <data name="SaveIn.Text" xml:space="preserve">
     <value>Сохранить в файл</value>
   </data>
-  <data name="&gt;&gt;iRam.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Baseboard.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -143,14 +143,11 @@
   <data name="iProcessor.Text" xml:space="preserve">
     <value>&lt;&gt;</value>
   </data>
-  <data name="&gt;&gt;iVideo.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="&gt;&gt;SaveIn.Name" xml:space="preserve">
     <value>SaveIn</value>
   </data>
-  <data name="MainMenu.Text" xml:space="preserve">
-    <value>Меню</value>
+  <data name="&gt;&gt;Video.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;iRam.Name" xml:space="preserve">
     <value>iRam</value>
@@ -206,8 +203,8 @@
   <data name="&gt;&gt;iBaseboard.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;iProcessor.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;iProcessor.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;Exit.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -221,8 +218,8 @@
   <data name="&gt;&gt;SaveIn.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Video.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="MainLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="Processor.Text" xml:space="preserve">
     <value>Процессор</value>
@@ -263,6 +260,9 @@
   <data name="&gt;&gt;Lang.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="iProcessor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="Video.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -273,10 +273,10 @@
     <value>2</value>
   </data>
   <data name="&gt;&gt;MainLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>1</value>
   </data>
   <data name="MainLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 13</value>
+    <value>111, 13</value>
   </data>
   <data name="iBaseboard.Text" xml:space="preserve">
     <value>&lt;&gt;</value>
@@ -329,8 +329,8 @@
   <data name="MainStrip.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
-  <data name="iProcessor.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;iRam.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;iVideo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -353,11 +353,8 @@
   <data name="&gt;&gt;Exit.Name" xml:space="preserve">
     <value>Exit</value>
   </data>
-  <data name="&gt;&gt;iProcessor.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;iBaseboard.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="Ram.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 225</value>
@@ -386,8 +383,8 @@
   <data name="Ram.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Rus.Text" xml:space="preserve">
-    <value>Русский</value>
+  <data name="&gt;&gt;iProcessor.Name" xml:space="preserve">
+    <value>iProcessor</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -645,14 +642,14 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <data name="&gt;&gt;iProcessor.Name" xml:space="preserve">
-    <value>iProcessor</value>
+  <data name="&gt;&gt;iVideo.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="MainStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 24</value>
+  <data name="Rus.Text" xml:space="preserve">
+    <value>Русский</value>
   </data>
   <data name="&gt;&gt;iBaseboard.Parent" xml:space="preserve">
     <value>$this</value>
@@ -670,12 +667,9 @@
     <value>Обозреватель системы</value>
   </data>
   <data name="&gt;&gt;iRam.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="Processor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MainLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;Ram.Name" xml:space="preserve">
@@ -711,6 +705,9 @@
   <data name="iRam.Text" xml:space="preserve">
     <value>&lt;&gt;</value>
   </data>
+  <data name="MainMenu.Text" xml:space="preserve">
+    <value>Меню</value>
+  </data>
   <data name="iBaseboard.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -722,7 +719,7 @@
     <value>NoControl</value>
   </data>
   <data name="MainLabel.Text" xml:space="preserve">
-    <value>Характеристики ПК</value>
+    <value>Характеристики ПК:</value>
   </data>
   <data name="iVideo.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -735,6 +732,9 @@
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
+  </data>
+  <data name="MainStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 24</value>
   </data>
   <data name="&gt;&gt;Processor.ZOrder" xml:space="preserve">
     <value>8</value>

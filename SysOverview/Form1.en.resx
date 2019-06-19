@@ -118,6 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MainLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="MainLabel.Text" xml:space="preserve">
+    <value>PC Specifications:</value>
+  </data>
   <data name="Ram.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 13</value>
   </data>
@@ -141,12 +147,6 @@
   </data>
   <data name="Processor.Text" xml:space="preserve">
     <value>Processor</value>
-  </data>
-  <data name="MainLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
-  </data>
-  <data name="MainLabel.Text" xml:space="preserve">
-    <value>PC specifications</value>
   </data>
   <data name="SaveIn.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 22</value>
@@ -435,6 +435,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Sustem Overview</value>
+    <value>System Overview</value>
   </data>
 </root>
